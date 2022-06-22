@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding background color in alternate column in Multifact-PivotTable.js</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="css/pivot.min.css"> 
+	<style>
+		.container {
+		  width: 96%;
+		  margin: 2%;
+		  padding:1%;
+		  border:1px solid #CDCDCD;
+		  height:600px;	
+		}
+		
+		#output{
+			width: 100%; 
+			height:500px;
+			overflow:auto;
+		}
+		
+		table.pvtTable tbody tr th, table.pvtTable thead tr th {
+			background-color: #E6EEEE;/*#F0F0F0;*/
+		}
+
+	</style>	
+</head> 
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl" id="myCtrl"> 
+	<div class='container'>
+	   <div class='row'>
+		<div class='col-md-12' style="text-align:center;"><h2>Adding background color in alternate column in Multifact-PivotTable.js</h2></div>
+	  </div>
+	  <div class='row'>  
+		<div class='col-md-12'>
+			<div id="output" style=""></div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<script src="lib/angular.min.js"></script>
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="lib/jquery.ui.touch-punch.min.js"></script> 
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/pivot.js"></script> 
+<script src="js/multifact-pivottable.js"></script>  
+<script src="js/tips_data2.min.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>		
